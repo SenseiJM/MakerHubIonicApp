@@ -1,0 +1,7 @@
+{
+  "name": "MakerHubIonicApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
