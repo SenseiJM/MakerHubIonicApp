@@ -12,10 +12,12 @@ import { CompetitionsComponent } from './components/competitions/competitions.co
 import { EventsComponent } from './components/events/events.component';
 import { TrainingComponent } from './components/training/training.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, TeamsComponent, CompetitionsComponent, EventsComponent, TrainingComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

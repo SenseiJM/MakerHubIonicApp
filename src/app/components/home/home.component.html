@@ -16,6 +16,16 @@
     </ion-card-content>
 </ion-card>
 
+<ion-card *ngFor="let annonce of listeAnnonces">
+    <img src="http://localhost:51627/api/Annonce/image/{{annonce.id}}">
+    <ion-card-header>
+        <ion-card-title>{{annonce.titre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        {{annonce.description}}
+    </ion-card-content>
+</ion-card>
+
 <ion-card>
     <ion-card-header>
         <ion-card-title>Vous savez tout !</ion-card-title>
