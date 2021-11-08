@@ -6,9 +6,14 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
+import { TeamsComponent } from './components/teams/teams.component';
+import { CompetitionsComponent } from './components/competitions/competitions.component';
+import { EventsComponent } from './components/events/events.component';
+import { TrainingComponent } from './components/training/training.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, TeamsComponent, CompetitionsComponent, EventsComponent, TrainingComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
