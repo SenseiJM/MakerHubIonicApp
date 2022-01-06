@@ -9,11 +9,15 @@ const routes: Routes = [
   {
     path: 'annonces',
     loadChildren: () => import('./pages/annonces/annonces.module').then( m => m.AnnoncesPageModule)
-  },  {
+  },
+  {
+    path: 'annonces-details',
+    loadChildren: () => import('./pages/annonces/details/annonce-details/annonce-details.module').then( m => m.AnnonceDetailsPageModule)
+  },
+  {
     path: 'soupers',
     loadChildren: () => import('./pages/soupers/soupers.module').then( m => m.SoupersPageModule)
   },
-
 
 ];
 

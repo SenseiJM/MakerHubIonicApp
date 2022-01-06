@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { AnnoncesPageRoutingModule } from './annonces-routing.module';
 
 import { AnnoncesPage } from './annonces.page';
+import { ImagePipe } from 'src/app/pipes/image.pipe';
+import { TruncatePipe } from 'src/app/pipes/truncate.pipe';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { AnnoncesPage } from './annonces.page';
     IonicModule,
     AnnoncesPageRoutingModule
   ],
-  declarations: [AnnoncesPage]
+  declarations: [AnnoncesPage, ImagePipe, TruncatePipe]
 })
 export class AnnoncesPageModule {}
