@@ -27,7 +27,7 @@ export class SoupersPage implements OnInit {
   }
 
   showDetails(souperId: number) {
-    this.router.navigate(['./details/souper-details', {id: souperId}]);
+    this.router.navigate(['souper-details', {id: souperId}]);
   }
 
 }
