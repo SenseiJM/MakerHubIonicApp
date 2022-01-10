@@ -1,0 +1,16 @@
+ion-back-button {
+    width: fit-content;
+}
+
+ion-title {
+    width: auto;
+    top: 15px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+ion-toolbar {
+    display: flex;
+    flex-direction: row;
+}

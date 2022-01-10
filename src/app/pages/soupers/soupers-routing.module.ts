@@ -7,7 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: SoupersPage
+  },  {
+    path: 'souper-details',
+    loadChildren: () => import('./details/souper-details/souper-details.module').then( m => m.SouperDetailsPageModule)
   }
+
 ];
 
 @NgModule({

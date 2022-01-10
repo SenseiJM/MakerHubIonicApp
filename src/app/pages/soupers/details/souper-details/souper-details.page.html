@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button></ion-back-button>
+    <ion-title>{{selectedSouper === undefined ? "Chargement..." : selectedSouper.titre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="selectedSouper">
+  <img src="{{selectedSouper.id.toString() | image:'Souper'}}" alt="">
+  <ion-card>{{selectedSouper.description}}</ion-card>
+</ion-content>

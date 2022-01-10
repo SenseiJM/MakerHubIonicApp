@@ -1,9 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{selectedAnnonce === null ? "Chargement..." : selectedAnnonce.titre}}</ion-title>
+    <ion-back-button></ion-back-button>
+    <ion-title>{{selectedAnnonce === undefined ? "Chargement..." : selectedAnnonce.titre}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content *ngIf="selectedAnnonce">
+  <img src="{{selectedAnnonce.id.toString() | image:'Annonce'}}" alt="">
+  <ion-card>{{selectedAnnonce.description}}</ion-card>
 </ion-content>

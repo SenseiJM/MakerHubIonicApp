@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AnnoncesPageRoutingModule } from './annonces-routing.module';
+import { SouperDetailsPageRoutingModule } from './souper-details-routing.module';
 
-import { AnnoncesPage } from './annonces.page';
+import { SouperDetailsPage } from './souper-details.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AnnoncesPageRoutingModule,
+    SouperDetailsPageRoutingModule,
     SharedModule
   ],
-  declarations: [AnnoncesPage]
+  declarations: [SouperDetailsPage]
 })
-export class AnnoncesPageModule {}
+export class SouperDetailsPageModule {}

@@ -9,7 +9,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-card *ngFor="let annonce of listeAnnonces" (click)="showDetails(annonce.id)">
-    <img src="{{annonce.id.toString() | image:'Annonce'}}">
+    <img src="{{annonce.id.toString() | image:'Annonce'}}" alt="">
     <ion-card-header>
       <ion-card-title>{{annonce.titre}}</ion-card-title>
     </ion-card-header>

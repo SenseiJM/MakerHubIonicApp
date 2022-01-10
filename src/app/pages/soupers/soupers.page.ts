@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Souper } from 'src/app/interfaces/souper';
+import { SouperService } from 'src/app/services/souper.service';
 
 @Component({
   selector: 'app-soupers',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoupersPage implements OnInit {
 
-  constructor() { }
+  listeSoupers: Souper[] = [];
+
+  constructor(private sService: SouperService, private router: Router) { }
 
   ngOnInit() {
+    this.chargerListeSoupers();
+  }
+
+  chargerListeSoupers() {
+    this.sService.getAll().subscribe(
+      (listFromApi: Souper[]) => {
+        this.listeSoupers = listFromApi;
+      }
+    );
+  }
+
+  showDetails(souperId: number) {
+    this.router.navigate(['./details/souper-details', {id: souperId}]);
   }
 
 }
