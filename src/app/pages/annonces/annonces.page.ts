@@ -27,7 +27,7 @@ export class AnnoncesPage implements OnInit {
   }
 
   showDetails(annonceId: number) {
-    this.router.navigate(['annonce-details', {id: annonceId}]);
+    this.router.navigate(['annonces/annonce-details', {id: annonceId}]);
   }
 
 }
