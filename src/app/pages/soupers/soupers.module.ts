@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -8,6 +8,7 @@ import { SoupersPageRoutingModule } from './soupers-routing.module';
 
 import { SoupersPage } from './soupers.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { SouperModalPage } from './souper-modal/souper-modal.page';
 
 @NgModule({
   imports: [
@@ -15,8 +16,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     FormsModule,
     IonicModule,
     SoupersPageRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
-  declarations: [SoupersPage]
+  declarations: [SoupersPage, SouperModalPage]
 })
 export class SoupersPageModule {}

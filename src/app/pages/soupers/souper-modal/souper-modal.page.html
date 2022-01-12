@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Veuillez indiquer le nombre de repas à réserver : </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (submit)="submit()" [formGroup]="formGroup">
+    <ion-input type="number" formControlName="nbRepas"></ion-input>
+    <ion-button shape="round" type="button" (click)="dismiss()">Annuler</ion-button>
+    <ion-button shape="round" type="submit">Confirmer</ion-button>
+  </form>
+</ion-content>

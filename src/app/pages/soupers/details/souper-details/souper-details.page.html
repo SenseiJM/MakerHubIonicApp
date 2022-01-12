@@ -8,4 +8,8 @@
 <ion-content *ngIf="selectedSouper">
   <img src="{{selectedSouper.id.toString() | image:'Souper'}}" alt="">
   <ion-card>{{selectedSouper.description}}</ion-card>
+
+  <ion-button (click)="presentModal()" *ngIf="selectedSouper.typeSouper === 'aEmporter'">Commander</ion-button>
+  <ion-button (click)="presentModal()" *ngIf="selectedSouper.typeSouper === 'surPlace'">S'inscrire</ion-button>
+
 </ion-content>

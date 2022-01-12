@@ -8,4 +8,5 @@ export interface Souper {
     photo: string;
     nombreMax: number;
     titre: string;
+    typeSouper: string;
 }
